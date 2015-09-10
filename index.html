@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- define our angular app -->
+<html ng-app="doTheMath" ng-controller="doTheMathController">
+  <head>
+    <title>Do The Math</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/yeti/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Do The Math!</h1>
+          <br><br>
+          <form role="form">
+            <label for="current-salary">What is your current annual salary?</label>
+            <input type="number" ng-model="currentSalary" class="form-control" placeholder="Your current salary"><br>
+            <label for="filing-status">What is your filing status?</label>
+            <select ng-model="filingStatus" id="select" class="form-control">
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="married-separately">Married Separately</option>
+              <option value="head-of-household">Head of Household</option>
+            </select><br>
+            <label for="pay-periods">How many pay periods in a year?</label>
+            <input type="number" ng-model="payPeriods" class="form-control" placeholder="1"><br>
+            <label for="state">What state do you currently live in?</label>
+            <input type="string" ng-model="state" class="form-control" placeholder="CO">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <table class="table table-hover ">
+            <thead>
+              <tr>
+                <th><h3>Pre-RefactorU</h3></th>
+                <th>Annual</th>
+                <th>Monthly</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Current Salary</td>
+                <td>{{ currentSalary | currency}}</td>
+                <td>{{ monthlyAmt() | currency }}</td>
+              </tr>
+              <tr>
+                <td>Taxes</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr class="pre-net-salary">
+                <td>Net take home salary</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+     <div class="row">
+        <div class="col-sm-6">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th><h3>Post-RefactorU</h3></th>
+                <th>Annual</th>
+                <th>Monthly</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New Salary</td>
+                <td>{{averageSalary | currency}}</td>
+                <td>{{ monthlyAmt() | currency }}</td>
+              </tr>
+              <tr>
+                <td>Taxes</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr class="post-net-salary">
+                <td>Net take home salary</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    
+
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
