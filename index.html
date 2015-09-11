@@ -21,17 +21,17 @@
             <label for="filing-status">What is your filing status?</label>
             <select ng-model="filingStatus" id="select" class="form-control">
               <option value="single">Single</option>
-              <option value="married">Married</option>
-              <option value="married-separately">Married Separately</option>
+              <option value="married">Married, Filing Jointly</option>
+              <option value="married-separately">Married, Filing Separately</option>
               <option value="head-of-household">Head of Household</option>
             </select><br>
             <label for="pay-periods">How many pay periods in a year?</label>
             <input type="number" ng-model="payPeriods" class="form-control" placeholder="1"><br>
             <label for="state">What state do you currently live in?</label>
-            <input type="string" ng-model="state" class="form-control" placeholder="CO">
+            <input type="string" ng-model="state" class="form-control" placeholder="CO"><br>
+            <center><button ng-click="getTaxes()" class="btn btn-primary btn-xs">Calculate</button></center>
         </div>
       </div>
-
       <div class="row">
         <div class="col-sm-6">
           <table class="table table-hover ">
@@ -46,7 +46,7 @@
               <tr>
                 <td>Current Salary</td>
                 <td>{{ currentSalary | currency}}</td>
-                <td>{{ monthlyAmt() | currency }}</td>
+                <td>{{ monthlyAmt(currentSalary) | currency }}</td>
               </tr>
               <tr>
                 <td>Taxes</td>
@@ -76,8 +76,8 @@
             <tbody>
               <tr>
                 <td>New Salary</td>
-                <td>{{averageSalary | currency}}</td>
-                <td>{{ monthlyAmt() | currency }}</td>
+                <td>{{ averageSalary | currency }}</td>
+                <td>{{ monthlyAmt(averageSalary) | currency }}</td>
               </tr>
               <tr>
                 <td>Taxes</td>
