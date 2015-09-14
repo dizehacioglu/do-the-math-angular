@@ -1,0 +1,27 @@
+Do The Math:
+
+Form:
+  ✔ Annual salary input @done (15-09-13 18:57)
+  ✔ Filing status input @done (15-09-13 18:57)
+  ✔ State input @done (15-09-13 18:57)
+  ✔ Pay periods input @done (15-09-13 18:57)
+  ✔ Submit button @done (15-09-13 18:57)
+  ✔ Taxee API Request!! @done (15-09-13 19:00)
+  ☐ Add $ sign to annual salary input
+  ☐ Create dropdown menu of states
+
+Tables:
+  ☐ Pre-RefactorU
+    ☐ Annual, monthly for salary and taxes
+    ☐ Calculate net salary (annual and monthly)
+  ✔ Post-RefactorU @done (15-09-13 18:58)
+    ✔ Annual, monthly for salary and taxes @done (15-09-13 18:57)
+    ✔ Calculate net salary (annual and monthly) @done (15-09-13 18:57)
+  ☐ Gain in pay
+    ☐ = Post net salary - pre net salary
+
+Loans:
+  ☐ Add option to incorporate loan prices (should this be required?)
+
+Graphs:
+  ☐ D3 graphics
