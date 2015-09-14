@@ -39,6 +39,8 @@ doTheMath.controller('doTheMathController', function($scope, $http){
 
       $scope.currentNet = $scope.currentSalary - $scope.totalTaxes;
 
+      $scope.payGain = $scope.averageNet  - $scope.currentNet;
+
     })
     .error(function(data, status){
       console.log('error');

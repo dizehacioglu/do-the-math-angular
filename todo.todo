@@ -11,14 +11,14 @@ Form:
   ☐ Create dropdown menu of states
 
 Tables:
-  ☐ Pre-RefactorU
-    ☐ Annual, monthly for salary and taxes
-    ☐ Calculate net salary (annual and monthly)
+  ✔ Pre-RefactorU @done (15-09-13 19:25)
+    ✔ Annual, monthly for salary and taxes @done (15-09-13 19:25)
+    ✔ Calculate net salary (annual and monthly) @done (15-09-13 19:25)
   ✔ Post-RefactorU @done (15-09-13 18:58)
     ✔ Annual, monthly for salary and taxes @done (15-09-13 18:57)
     ✔ Calculate net salary (annual and monthly) @done (15-09-13 18:57)
-  ☐ Gain in pay
-    ☐ = Post net salary - pre net salary
+  ✔ Gain in pay @done (15-09-13 19:25)
+    ✔ = Post net salary - pre net salary @done (15-09-13 19:25)
 
 Loans:
   ☐ Add option to incorporate loan prices (should this be required?)
