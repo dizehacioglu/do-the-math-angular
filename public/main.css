@@ -6,3 +6,9 @@
 .post-net-salary {
 	background-color: #ffbe12;
 }
+
+.btn-primary {
+	color: #434343;
+	background-color: #ffbe12;
+	border: 1px solid #434343;
+}

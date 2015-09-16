@@ -7,16 +7,17 @@ Form:
   ✔ Pay periods input @done (15-09-13 18:57)
   ✔ Submit button @done (15-09-13 18:57)
   ✔ Taxee API Request!! @done (15-09-13 19:00)
-  ☐ Add $ sign to annual salary input
-  ☐ Create dropdown menu of states
+  ✔ Add $ sign to annual salary input @done (15-09-14 09:41)
+  ✔ Create dropdown menu of states @done (15-09-14 09:41)
 
 Tables:
   ✔ Pre-RefactorU @done (15-09-13 19:25)
     ✔ Annual, monthly for salary and taxes @done (15-09-13 19:25)
     ✔ Calculate net salary (annual and monthly) @done (15-09-13 19:25)
-  ✔ Post-RefactorU @done (15-09-13 18:58)
+  ☐ Post-RefactorU
     ✔ Annual, monthly for salary and taxes @done (15-09-13 18:57)
     ✔ Calculate net salary (annual and monthly) @done (15-09-13 18:57)
+    ☐ Add explanation of salary
   ✔ Gain in pay @done (15-09-13 19:25)
     ✔ = Post net salary - pre net salary @done (15-09-13 19:25)
 

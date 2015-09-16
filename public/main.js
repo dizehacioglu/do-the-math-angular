@@ -16,7 +16,7 @@ doTheMath.controller('doTheMathController', function($scope, $http){
     var payload = {
       pay_rate: $scope.currentSalary,
       filing_status: $scope.filingStatus,
-      pay_periods: $scope.payPeriods,
+      pay_periods: 1,
       state: $scope.state,
       year: '2014'
     };
