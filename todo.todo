@@ -9,6 +9,7 @@ Form:
   ✔ Taxee API Request!! @done (15-09-13 19:00)
   ✔ Add $ sign to annual salary input @done (15-09-14 09:41)
   ✔ Create dropdown menu of states @done (15-09-14 09:41)
+  ☐ Add error message if form isn't properly filled out
 
 Tables:
   ✔ Pre-RefactorU @done (15-09-13 19:25)

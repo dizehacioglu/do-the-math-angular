@@ -15,7 +15,9 @@
         <div class="col-sm-6">
           <h1>Do The Math!</h1>
           <!-- <center><img src="/do-the-math.png"></center> -->
-          <br><br>
+          <div ng-show="isError" class="error-message ng-hide">
+            <small>Oops! The form wasn't filled out properly. Try again.</small>
+          </div>
           <form role="form">
             <label for="current-salary">What is your current annual salary?</label>
             <div class="input-group">
@@ -87,7 +89,12 @@
               <option value="WY">Wyoming</option>
             </select><br>
             <center><button ng-click="getTaxes()" class="btn btn-primary btn-xs">Calculate</button></center>
+          </form>
+          <div class="loan">
+            Planning on taking out a loan?
+          </div>
         </div>
+
         <div class="col-sm-6">
           <table class="table table-hover ">
             <thead>

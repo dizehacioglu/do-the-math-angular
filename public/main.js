@@ -43,6 +43,7 @@ doTheMath.controller('doTheMathController', function($scope, $http){
 
     })
     .error(function(data, status){
+      $scope.isError = true;
       console.log('error');
     });
 
