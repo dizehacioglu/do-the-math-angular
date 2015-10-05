@@ -2,6 +2,8 @@ var express = require('express');
 var bodyParser = require('body-parser');
 
 var app = express();
+
+// app.set('port', process.env.PORT || 7050);
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
@@ -16,6 +18,8 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
-var server = app.listen(7050, function() {
+var port = process.env.PORT || 7050;
+
+var server = app.listen(port, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
