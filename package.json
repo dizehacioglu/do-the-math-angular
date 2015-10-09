@@ -1,4 +1,9 @@
 {
+
+	"engines": {
+    	"node": "0.10.x"
+  	},
+
 	"dependencies": {
 		"express": "^4",
 		"jade": "^1",
