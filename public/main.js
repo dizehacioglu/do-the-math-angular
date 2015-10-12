@@ -23,7 +23,7 @@ doTheMath.controller('doTheMathController', function($scope, $http){
 
     var req = {
       method: 'POST',
-      url: 'http://taxee.io/api/v1/calculate/2014',
+      url: '//taxee.io/api/v1/calculate/2014',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
       }, 
